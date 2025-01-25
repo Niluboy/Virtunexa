@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery and Factorial Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Factorial Calculator Section -->
+        <section id="factorial-calculator">
+            <h1>Factorial Calculator</h1>
+            <label for="number">Enter a positive integer:</label>
+            <input type="text" id="number" placeholder="Enter number">
+            <button onclick="calculateFactorial()">Calculate Factorial</button>
+
+            <div id="factorial-result">
+                <p id="factorial-output"></p>
+                <p id="method-output"></p>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="image-gallery">
+            <h1>Image Gallery</h1>
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="image1.jpg" alt="Image 1" class="gallery-image" onclick="openLightbox(0)">
+                </div>
+                <div class="image-container">
+                    <img src="image2.jpg" alt="Image 2" class="gallery-image" onclick="openLightbox(1)">
+                </div>
+                <div class="image-container">
+                    <img src="image3.jpg" alt="Image 3" class="gallery-image" onclick="openLightbox(2)">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">X</span>
+        <img id="lightbox-image" src="" alt="Full Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
