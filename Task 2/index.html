@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Virtual Postcard Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Create Your Virtual Postcard</h1>
+    <p>Design, personalize, and share your postcard with images, text, and animations!</p>
+  </header>
+
+  <section id="design">
+    <div class="postcard-preview">
+      <div class="postcard" id="postcard">
+        <div class="image-container">
+          <img src="./postcard.jpeg" alt="Postcard Image" id="postcardImage">
+        </div>
+        <div class="text-container">
+          <h2 id="postcardText">Your Message Here</h2>
+        </div>
+      </div>
+    </div>
+
+    <form id="postcardForm">
+      <fieldset>
+        <legend>Customize Your Postcard</legend>
+        
+        <label for="imageUpload">Upload Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="postcardMessage">Your Message:</label>
+        <textarea id="postcardMessage" placeholder="Write your message here..." required></textarea>
+
+        <label for="animationSelect">Choose Animation:</label>
+        <select id="animationSelect">
+          <option value="none">None</option>
+          <option value="fadeIn">Fade In</option>
+          <option value="zoomIn">Zoom In</option>
+        </select>
+
+        <button type="submit">Preview Postcard</button>
+      </fieldset>
+    </form>
+
+    <div id="output">
+      <button id="shareButton" style="display: none;">Share Your Postcard</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Virtual Postcards. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
