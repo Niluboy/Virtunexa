@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Interactive Tour Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Interactive Tour Guide</h1>
+        <p>Explore our exhibits with an engaging and informative guide!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#tourSelection">Exhibit Selection</a></li>
+            <li><a href="#exhibitInfo">Exhibit Information</a></li>
+            <li><a href="#tour">Start Tour</a></li>
+        </ul>
+    </nav>
+
+    <section id="tourSelection">
+        <h2>Select an Exhibit</h2>
+        <div class="exhibit-list">
+            <button class="exhibit" data-exhibit="exhibit1">Exhibit 1: Ancient Artifacts</button>
+            <button class="exhibit" data-exhibit="exhibit2">Exhibit 2: Renaissance Art</button>
+            <button class="exhibit" data-exhibit="exhibit3">Exhibit 3: Space Exploration</button>
+        </div>
+    </section>
+
+    <section id="exhibitInfo">
+        <h2>Exhibit Details</h2>
+        <div id="exhibitImage">
+            <img id="exhibitImageDisplay" src="" alt="Exhibit Image" class="hidden">
+        </div>
+        <p id="exhibitDescription">Select an exhibit to learn more.</p>
+        <button id="startTour" class="hidden">Start the Tour</button>
+    </section>
+
+    <section id="tour" class="hidden">
+        <h2 id="tourTitle">Tour Guide</h2>
+        <p id="tourDescription">Welcome to the tour! Please follow along to learn more about the exhibit.</p>
+        <div id="tourButtons">
+            <button id="previousButton" class="hidden">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Museum Tour Guide Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
